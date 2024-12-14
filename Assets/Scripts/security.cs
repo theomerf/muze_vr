@@ -78,7 +78,11 @@ public class Security : MonoBehaviour
         if (grabTime > 0 && !isPlayerKicked)
         {
             float heldTime = Time.time - grabTime;
-
+            if (heldTime > 9)
+            {
+                securityAnimator.SetBool("isSitting", false);
+                securityAnimator.SetBool("isIdle", true);
+            }
             if (heldTime > 10 && !isWarningShown)
             {
                 // Uyarý göster
