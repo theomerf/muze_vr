@@ -156,30 +156,22 @@ public class Security : MonoBehaviour
             if (xrOriginTransform != null)
             {
                 // Kamera yönüne bakarak güvenlik karakterini biraz mesafeye ýþýnla
-                Vector3 forwardDirection = cameraOffset.forward; // Kamera ofsetinin yönü
+                Vector3 forwardDirection = cameraOffset.forward.normalized; // Kamera ofsetinin yönü (normalize edilmiþ)
                 Vector3 spawnPosition = cameraOffset.position + forwardDirection * securityTeleportDistance;
 
-                // Y pozisyonunu sabit tutalým (current y position of security character)
-                spawnPosition.y = securityCharacter.position.y; // Y koordinatýný sabit tut
+                // Y pozisyonunu sabit tutalým
+                spawnPosition.y = securityCharacter.position.y; // Güvenlik karakterinin mevcut yüksekliði
 
                 securityCharacter.position = spawnPosition;
 
-                // Güvenlik karakterinin yüzünü kameraya doðru çevirelim (ters deðil)
-                // Kameranýn yönünü doðru bir þekilde hesaplayalým
-                Vector3 directionToFace = xrOriginTransform.position - securityCharacter.position;
+                // Güvenlik karakterini kameranýn tam tersine döndürmek için
+                Vector3 directionToPlayer = securityCharacter.position - xrOriginTransform.position; // Güvenlik karakteri ile oyuncu arasýndaki yön
+                directionToPlayer.y = 0; // Y eksenindeki farký yok say
 
-                // Y eksenindeki farký sýfýrlayarak sadece X ve Z yönünde döndürme yapýyoruz
-                directionToFace.y = 0;
-
-                // Karakterin yönünü oyuncuya doðru döndürüyoruz
-                securityCharacter.rotation = Quaternion.LookRotation(directionToFace);
-
-                // Eðer güvenlik karakterinin yönü yine doðru olmayacaksa, alternatif olarak:
-                // Güvenlik karakterinin kamera ofseti ile olan pozisyonunu da kontrol edebiliriz
-                // Bu sayede güvenlik her zaman doðru yöne bakacaktýr.
-                if (securityCharacter.rotation != Quaternion.LookRotation(directionToFace))
+                if (directionToPlayer != Vector3.zero)
                 {
-                    securityCharacter.rotation = Quaternion.LookRotation(directionToFace);
+                    // Güvenlik karakterini kameraya bakacak þekilde döndür, ancak 180 derece döndür (yani size bakacak)
+                    securityCharacter.rotation = Quaternion.LookRotation(-directionToPlayer); // Yönün tersini alarak güvenlik karakterini size yönlendiriyoruz
                 }
 
                 // Güvenlik sesi
@@ -191,6 +183,8 @@ public class Security : MonoBehaviour
             }
         }
     }
+
+
 
     private void SoundOff()
     {
