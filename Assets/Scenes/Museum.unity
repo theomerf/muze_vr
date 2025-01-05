@@ -3419,7 +3419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &97621918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3797,7 +3797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &99302235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7866,7 +7866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &188299706
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8068,7 +8068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &195014753
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8981,7 +8981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &225434792
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9106,6 +9106,223 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4540396904194812790, guid: 88896c984b37a2b4ab1a0261bc41c43a, type: 3}
+--- !u!1 &230084223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230084224}
+  - component: {fileID: 230084229}
+  - component: {fileID: 230084228}
+  - component: {fileID: 230084227}
+  - component: {fileID: 230084226}
+  - component: {fileID: 230084225}
+  m_Layer: 0
+  m_Name: cam (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &230084224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230084223}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.6166668, y: 0.8750007, z: -0.5018735}
+  m_LocalScale: {x: 0.00125, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855666217}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &230084225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230084223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44317346f1895ab4d9e0ecb4850f7aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  breakForceThreshold: 2
+--- !u!82 &230084226
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230084223}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!65 &230084227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230084223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &230084228
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230084223}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5296c13f95e23654386cb31387bdb328, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &230084229
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230084223}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &233153733
 GameObject:
   m_ObjectHideFlags: 0
@@ -10725,7 +10942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &276520340
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11100,6 +11317,223 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &297091059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 297091060}
+  - component: {fileID: 297091065}
+  - component: {fileID: 297091064}
+  - component: {fileID: 297091063}
+  - component: {fileID: 297091062}
+  - component: {fileID: 297091061}
+  m_Layer: 0
+  m_Name: cam (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &297091060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297091059}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.6166668, y: 0.87500006, z: 0.49937487}
+  m_LocalScale: {x: 0.00125, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855666217}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &297091061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297091059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44317346f1895ab4d9e0ecb4850f7aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  breakForceThreshold: 2
+--- !u!82 &297091062
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297091059}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!65 &297091063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297091059}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &297091064
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297091059}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5296c13f95e23654386cb31387bdb328, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &297091065
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297091059}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &297546791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2812817048677590210, guid: f5dd99573c0b37642b6b4915dbbe94b4,
@@ -11381,7 +11815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &305811836
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11598,7 +12032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &307015563
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17221,7 +17655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &377637152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18537,7 +18971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &400043768
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19494,7 +19928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &430318985
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24149,7 +24583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &460977248
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25024,7 +25458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &498514433
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27252,7 +27686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &586539133
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28587,7 +29021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &609441185
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28804,7 +29238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &615479094
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29743,7 +30177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &639767444
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31838,7 +32272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &719806085
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32225,7 +32659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &731106917
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32591,7 +33025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &739106784
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33226,7 +33660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &749014502
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34064,7 +34498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &774103544
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36171,6 +36605,11 @@ Transform:
   - {fileID: 2013726760}
   - {fileID: 1663920704}
   - {fileID: 1769057776}
+  - {fileID: 1891848605}
+  - {fileID: 1425751413}
+  - {fileID: 297091060}
+  - {fileID: 230084224}
+  - {fileID: 1686635166}
   - {fileID: 1855530746}
   - {fileID: 1536025207}
   m_Father: {fileID: 1929776736}
@@ -39161,7 +39600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &914959797
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39488,7 +39927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &915366464
 AudioSource:
   m_ObjectHideFlags: 0
@@ -40423,7 +40862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &952219950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -40681,7 +41120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &954318686
 AudioSource:
   m_ObjectHideFlags: 0
@@ -42338,7 +42777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1006577724
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43238,7 +43677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1015242140
 AudioSource:
   m_ObjectHideFlags: 0
@@ -46135,7 +46574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1104708020
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47246,7 +47685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1123702666
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56056,7 +56495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1241099413
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56659,7 +57098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1251720274
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56805,7 +57244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1257387983
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57022,7 +57461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1259451905
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58006,7 +58445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1298612812
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58954,7 +59393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1317192349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -64197,7 +64636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1402658677
 AudioSource:
   m_ObjectHideFlags: 0
@@ -64887,7 +65326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1417176457
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65157,6 +65596,223 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1425751412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425751413}
+  - component: {fileID: 1425751418}
+  - component: {fileID: 1425751417}
+  - component: {fileID: 1425751416}
+  - component: {fileID: 1425751415}
+  - component: {fileID: 1425751414}
+  m_Layer: 0
+  m_Name: cam (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1425751413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425751412}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1164169, y: 0.8750007, z: -0.0012493134}
+  m_LocalScale: {x: 0.0005, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855666217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1425751414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425751412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44317346f1895ab4d9e0ecb4850f7aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  breakForceThreshold: 2
+--- !u!82 &1425751415
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425751412}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!65 &1425751416
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425751412}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1425751417
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425751412}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5296c13f95e23654386cb31387bdb328, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1425751418
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425751412}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1425779502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66894,7 +67550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1477446442
 AudioSource:
   m_ObjectHideFlags: 0
@@ -70187,7 +70843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1570829007
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71255,7 +71911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1594771254
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71985,7 +72641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1616738649
 AudioSource:
   m_ObjectHideFlags: 0
@@ -73201,7 +73857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1642060056
 AudioSource:
   m_ObjectHideFlags: 0
@@ -73879,7 +74535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1663920709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -74514,7 +75170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1683584742
 AudioSource:
   m_ObjectHideFlags: 0
@@ -74725,6 +75381,223 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1612184650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1686635165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686635166}
+  - component: {fileID: 1686635171}
+  - component: {fileID: 1686635170}
+  - component: {fileID: 1686635169}
+  - component: {fileID: 1686635168}
+  - component: {fileID: 1686635167}
+  m_Layer: 0
+  m_Name: cam (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686635166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686635165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 1.6166664, y: 1.2495004, z: -0.0012493134}
+  m_LocalScale: {x: 0.001, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855666217}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!114 &1686635167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686635165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44317346f1895ab4d9e0ecb4850f7aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  breakForceThreshold: 2
+--- !u!82 &1686635168
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686635165}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!65 &1686635169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686635165}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1686635170
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686635165}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5296c13f95e23654386cb31387bdb328, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1686635171
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686635165}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1688422016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75949,7 +76822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1717323430
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76598,7 +77471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1726297200
 AudioSource:
   m_ObjectHideFlags: 0
@@ -78074,7 +78947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1757443856
 AudioSource:
   m_ObjectHideFlags: 0
@@ -78397,7 +79270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1760813833
 AudioSource:
   m_ObjectHideFlags: 0
@@ -79292,7 +80165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1769057781
 AudioSource:
   m_ObjectHideFlags: 0
@@ -79655,7 +80528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1774622002
 AudioSource:
   m_ObjectHideFlags: 0
@@ -81845,7 +82718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1855530751
 AudioSource:
   m_ObjectHideFlags: 0
@@ -83123,6 +83996,223 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 680919612}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1891848604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891848605}
+  - component: {fileID: 1891848610}
+  - component: {fileID: 1891848609}
+  - component: {fileID: 1891848608}
+  - component: {fileID: 1891848607}
+  - component: {fileID: 1891848606}
+  m_Layer: 0
+  m_Name: cam (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1891848605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891848604}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.116417, y: 0.8750007, z: -0.0012493134}
+  m_LocalScale: {x: 0.0005, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855666217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891848606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891848604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44317346f1895ab4d9e0ecb4850f7aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  breakForceThreshold: 2
+--- !u!82 &1891848607
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891848604}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!65 &1891848608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891848604}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1891848609
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891848604}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5296c13f95e23654386cb31387bdb328, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1891848610
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891848604}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1892642546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9045547087364118147, guid: 9e905c9e78f432c478d7e90f2ee8defc,
@@ -84079,7 +85169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1916001869
 AudioSource:
   m_ObjectHideFlags: 0
@@ -84552,7 +85642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1930961351
 AudioSource:
   m_ObjectHideFlags: 0
@@ -84803,7 +85893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1935460876
 AudioSource:
   m_ObjectHideFlags: 0
@@ -86137,7 +87227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1953302496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -88242,7 +89332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1991575874
 AudioSource:
   m_ObjectHideFlags: 0
@@ -88885,7 +89975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &1996336142
 AudioSource:
   m_ObjectHideFlags: 0
@@ -89329,7 +90419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &2013726765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -90064,7 +91154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &2023157253
 AudioSource:
   m_ObjectHideFlags: 0
@@ -91531,7 +92621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &2049447785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -91862,7 +92952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &2060069185
 AudioSource:
   m_ObjectHideFlags: 0
@@ -93929,7 +95019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &2103306578
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94326,7 +95416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 96a6c82641ab4c1438e30aef8814074d, type: 3}
-  breakForceThreshold: 10
+  breakForceThreshold: 2
 --- !u!82 &2112545382
 AudioSource:
   m_ObjectHideFlags: 0

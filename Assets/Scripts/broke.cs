@@ -1,18 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Broke : MonoBehaviour
 {
     [Header("Kýrýlma Ayarlarý")]
-    public AudioClip breakSound; // Kýrýlma sesi
-    public float breakForceThreshold = 10f; // Kýrýlma için gereken minimum kuvvet
+    public AudioClip breakSound; // Kýrýlma sýrasýnda çalýnacak ses
+    public float breakForceThreshold = 2f; // Kýrýlma için gereken minimum çarpýþma kuvveti
 
-    private AudioSource audioSource;
-    private bool isBroken = false; // Nesne zaten kýrýldý mý?
+    private AudioSource audioSource; // Ses çalma iþlemi için kullanýlacak
+    private bool isBroken = false; // Nesnenin kýrýlma durumunu takip eder
+
 
     private void Start()
     {
-        // Ses kaynaðý ekle
+        // Ses kaynaðý oluþturma ve ayarlama
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
         if (breakSound != null)
@@ -21,26 +23,32 @@ public class Broke : MonoBehaviour
         }
     }
 
+ 
+ 
     private void OnCollisionEnter(Collision collision)
     {
-        if (isBroken) return; // Nesne zaten kýrýldýysa iþlem yapma
+        if (isBroken) return;
 
+        // Çarpýþma kuvvetini hesapla
         float collisionForce = collision.relativeVelocity.magnitude;
 
+        // Eðer kuvvet eþik deðerini aþýyorsa nesne kýrýlýr
         if (collisionForce >= breakForceThreshold)
         {
             BreakObject();
         }
     }
 
+
     private void BreakObject()
     {
-        isBroken = true;
+        isBroken = true; // Nesnenin kýrýldýðýný iþaretle
 
-        // Parçalarý oluþtur
+        // Mevcut mesh'i parçalara ayýr
         List<PartMesh> parts = SplitMesh();
         foreach (PartMesh part in parts)
         {
+            // Her bir parçayý sahnede fiziksel bir nesne olarak oluþtur
             part.MakeGameObject(this);
         }
 
@@ -51,18 +59,20 @@ public class Broke : MonoBehaviour
         }
     }
 
+
     private void PlayBreakSound()
     {
-        // Geçici bir nesne oluþtur ve ses çal
+        // Ses çalmak için geçici bir nesne oluþtur
         GameObject tempAudioObject = new GameObject("BreakSound");
         AudioSource tempAudioSource = tempAudioObject.AddComponent<AudioSource>();
         tempAudioSource.clip = breakSound;
         tempAudioSource.Play();
 
-        // Ses tamamlandýktan sonra geçici nesneyi yok et
+  
         Destroy(tempAudioObject, breakSound.length);
     }
 
+  
     private List<PartMesh> SplitMesh()
     {
         Mesh originalMesh = GetComponent<MeshFilter>().mesh;
@@ -71,10 +81,11 @@ public class Broke : MonoBehaviour
         Vector2[] uv = originalMesh.uv;
         int[] triangles = originalMesh.triangles;
 
-        // Rastgele parçalara ayýrmak için
-        int numParts = Random.Range(5, 15); // 5 ile 15 arasýnda rastgele parça sayýsý
+        // Parça sayýsýný rastgele belirle (5-15 arasý)
+        int numParts = Random.Range(5, 15);
         List<PartMesh> parts = new List<PartMesh>();
 
+        // Her bir parça için üçgenleri ayýrma iþlemi
         for (int i = 0; i < numParts; i++)
         {
             List<Vector3> partVertices = new List<Vector3>();
@@ -82,9 +93,9 @@ public class Broke : MonoBehaviour
             List<Vector2> partUV = new List<Vector2>();
             List<int> partTriangles = new List<int>();
 
+            // Mesh'in üçgenlerini parçaya ekleme
             for (int j = 0; j < triangles.Length; j += 3)
             {
-                // Rastgele üçgen seçimi
                 if (Random.value > 0.5f)
                 {
                     int index1 = triangles[j];
@@ -127,21 +138,24 @@ public class Broke : MonoBehaviour
     }
 }
 
+
 public class PartMesh
 {
-    public Vector3[] Vertices;
-    public Vector2[] UV;
-    public Vector3[] Normals;
-    public int[][] Triangles;
-    public Bounds Bounds;
-    public GameObject GameObject;
+    public Vector3[] Vertices; // Köþe noktalarý
+    public Vector2[] UV; // Kaplama koordinatlarý
+    public Vector3[] Normals; // Normaller
+    public int[][] Triangles; // Üçgen dizileri
+    public GameObject GameObject; // Fiziksel sahne nesnesi
+
 
     public void MakeGameObject(Broke destroyer)
     {
+        // Parçayý sahnede bir nesne olarak oluþtur
         GameObject = new GameObject("PartMesh");
         GameObject.transform.position = destroyer.transform.position;
         GameObject.transform.rotation = destroyer.transform.rotation;
 
+        // Yeni mesh oluþtur ve sahneye ekle
         Mesh mesh = new Mesh
         {
             vertices = Vertices,
@@ -157,16 +171,17 @@ public class PartMesh
         mesh.RecalculateBounds();
         mesh.RecalculateNormals();
 
-        var meshFilter = GameObject.AddComponent<MeshFilter>();
-        var meshRenderer = GameObject.AddComponent<MeshRenderer>();
+        MeshFilter meshFilter = GameObject.AddComponent<MeshFilter>();
+        MeshRenderer meshRenderer = GameObject.AddComponent<MeshRenderer>();
 
         meshFilter.mesh = mesh;
         meshRenderer.materials = destroyer.GetComponent<MeshRenderer>().materials;
 
+        // Rigidbody eklenerek fiziksel hareket saðlanýr
         Rigidbody rigidbody = GameObject.AddComponent<Rigidbody>();
         rigidbody.useGravity = true;
 
-        // Parçalarýn belirli bir süre sonra yok edilmesi
-        Object.Destroy(GameObject, 10f); // 10 saniye sonra parçalarý yok et
+        // Parçayý 10 saniye sonra yok et
+        Object.Destroy(GameObject, 10f);
     }
 }
