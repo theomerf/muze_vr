@@ -12,6 +12,7 @@ public class Security : MonoBehaviour
     public Component xrOrigin; // XR Origin nesnesini buraya atacaðýz
     public Transform securityCharacter; // Güvenlik karakterinin transformu
     public Animator securityAnimator; // Güvenlik karakterinin animatoru
+    public Transform playerLocation;
     public float teleportDelay = 2f; // Güvenlik karakterinin teleport olma süresi (kick animasyonu sonrasý)
 
     // Güvenlik karakterinin ýþýnlanacaðý pozisyon
@@ -148,41 +149,24 @@ public class Security : MonoBehaviour
     {
         isSecurityNear = true;
 
-        // Kamera ofseti kullanarak güvenlik karakterini oyuncunun yanýna ýþýnla
-        if (securityCharacter != null && xrOrigin != null && cameraOffset != null)
+        // Güvenlik karakterini önceden belirlenmiþ konuma ýþýnla
+        if (securityCharacter != null && playerLocation != null)
         {
-            Transform xrOriginTransform = xrOrigin as Transform; // xrOrigin'i Transform'a cast et
+            // Güvenlik karakterinin pozisyonunu ve rotasyonunu `securityTeleportPosition`'dan al
+            securityCharacter.position = playerLocation.position;
+            securityCharacter.rotation = playerLocation.rotation;
 
-            if (xrOriginTransform != null)
+            // Güvenlik sesi çal
+            if (securityAudio != null)
             {
-                // Kamera yönüne bakarak güvenlik karakterini biraz mesafeye ýþýnla
-                Vector3 forwardDirection = cameraOffset.forward.normalized; // Kamera ofsetinin yönü (normalize edilmiþ)
-                Vector3 spawnPosition = cameraOffset.position + forwardDirection * securityTeleportDistance;
-
-                // Y pozisyonunu sabit tutalým
-                spawnPosition.y = securityCharacter.position.y; // Güvenlik karakterinin mevcut yüksekliði
-
-                securityCharacter.position = spawnPosition;
-
-                // Güvenlik karakterini kameranýn tam tersine döndürmek için
-                Vector3 directionToPlayer = securityCharacter.position - xrOriginTransform.position; // Güvenlik karakteri ile oyuncu arasýndaki yön
-                directionToPlayer.y = 0; // Y eksenindeki farký yok say
-
-                if (directionToPlayer != Vector3.zero)
-                {
-                    // Güvenlik karakterini kameraya bakacak þekilde döndür, ancak 180 derece döndür (yani size bakacak)
-                    securityCharacter.rotation = Quaternion.LookRotation(-directionToPlayer); // Yönün tersini alarak güvenlik karakterini size yönlendiriyoruz
-                }
-
-                // Güvenlik sesi
-                if (securityAudio != null)
-                {
-                    securityAudio.gameObject.SetActive(true); // Güvenlik sesini çal
-                    Invoke("SoundOff", 3);
-                }
+                securityAudio.gameObject.SetActive(true); // Güvenlik sesini çal
+                Invoke("SoundOff", 3);
             }
         }
     }
+
+
+
 
 
 
